@@ -1,0 +1,21 @@
+name: RonAutoBuilder
+version: 4.0.0
+main: dev.autobuilder.AutoBuilderPlugin
+api-version: '1.21'
+softdepend: [Vault, PlaceholderAPI]
+description: Builder NPCs that construct schematics block by block - survival and admin modes with hire and economy support
+commands:
+  ronautobuilder:
+    description: RonAutoBuilder main command (opens the GUI)
+    aliases: [ab, rab, autobuilder, constructor]
+    usage: /<command> help
+permissions:
+  ronautobuilder.survival:
+    description: Use the survival builder (materials from inventory, a supply chest or a paid contract)
+    default: true
+  ronautobuilder.admin:
+    description: Full admin access (free materials, NPCs, skins, saving, reload)
+    default: op
+  ronautobuilder.economy.bypass:
+    description: Do not pay for builds or hiring
+    default: op

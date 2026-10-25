@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------- Economy (survival players only)
+#
+# Setup A - "Pay for labor, bring your own blocks":
+#   players gather the blocks themselves (supply inventory / chest) and pay labor-per-block.
+# Setup B - "Turnkey contractor":
+#   players use "/ab supply contract": the builders bring the blocks, the player pays the
+#   shop prices from shop-prices.yml plus the labor fee, all before the first block is placed.
+#
+# Extra builders and faster speeds are priced in hire.yml.
+
+enabled: false
+
+currency:
+  # VAULT = automatically uses the economy plugin that Vault is connected to
+  #         (EssentialsX, CMI, ... the console shows which one was found).
+  # ITEM  = players pay with an item, for example diamonds.
+  type: VAULT
+  item: DIAMOND           # only used when type is ITEM
+
+labor-per-block: 0.5      # fee for every block the builders place
+charge-batch-blocks: 10   # pay-as-you-go: money is taken for this many blocks at a time;
+                          # the build pauses when the player runs out of funds
+
+contract:
+  enabled: true           # allow "supply contract" (Setup B)
+
+confirm: true             # show the price and ask for confirmation before charging anything

@@ -1,0 +1,19 @@
+# ---------------------------------------------------------------- Survival mode
+# Used by everyone with ronautobuilder.survival (default: all players).
+# Admins can test it with /ab survival.
+
+enabled: true
+schematics-folder: schematics/players   # survival players only see the files in this folder
+speed: 5                  # starting speed (blocks per second, per builder)
+max-speed: 20             # hard cap; faster speeds must also exist in hire.yml
+max-builders: 4           # hard cap; more builders must also exist in hire.yml
+max-blocks: 20000         # biggest build a player may start
+ignore-air: true          # never clear existing terrain
+
+supply:
+  default: INVENTORY      # INVENTORY, CHEST or CONTRACT (contract needs economy.yml)
+  chest-max-distance: 16  # the supply chest must be this close to the build origin
+
+protection:
+  check-origin: true      # refuse origins/builds inside protected chunks
+  check-each-block: true  # ask protection plugins before every block is placed

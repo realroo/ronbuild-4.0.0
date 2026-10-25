@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------- Hire builders (survival players)
+# Price to use more builders or a faster build, charged once per build in the currency of
+# economy.yml. 0 = free. Everything not listed here is not available to players.
+# Without an active economy only the free entries (1 builder, speed 5) can be used.
+
+builders:
+  1: 0
+  2: 500
+  3: 900
+  4: 1200
+
+speed:                    # blocks per second, per builder
+  5: 0
+  10: 300
+  15: 600
+  20: 1000

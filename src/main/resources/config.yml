@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------- RonAutoBuilder: shared settings
+# Mode settings:   survival.yml (players) and admin.yml (admins)
+# Money and hiring: economy.yml, hire.yml, shop-prices.yml
+
+max-volume: 40000000      # biggest schematic box (cells) that may be loaded; 2 bytes of RAM each
+
+effects: true             # block particles + the matching place sound for every block
+boss-bar: true            # progress bar for the owner
+celebration: true         # happy-villager particles + level-up sound when a build finishes
+
+build:
+  smart-order: true       # per layer: solid blocks first, fragile blocks (torches, doors...) after
+  max-undo: 300000        # blocks remembered for /ab undo
+
+preview:
+  outline-seconds: 15
+  ghost-seconds: 30
+  max-ghost-blocks: 20000
+
+persistence:
+  enabled: true           # save running builds to jobs.yml and resume after a restart or crash
+  autosave-seconds: 30
+
+builder:
+  name: Builder
+  held-item: IRON_PICKAXE # item builders hold (any item name, or NONE)
+  skin:
+    name: ""              # Minecraft username to copy the skin from
+    # Custom uploaded skin: upload a PNG on https://mineskin.org, then paste the
+    # resulting "value" and "signature" here (too long for a chat command).
+    texture: ""
+    signature: ""
+
+npc:
+  max-npcs: 50

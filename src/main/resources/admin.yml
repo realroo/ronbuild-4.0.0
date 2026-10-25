@@ -1,0 +1,15 @@
+# ---------------------------------------------------------------- Admin mode
+# Used by players with ronautobuilder.admin. Nothing here affects survival players,
+# and admins never pay for builds.
+
+schematics-folder: schematics/admin     # admins only see the files in this folder
+speed: 10                 # starting speed (blocks per second, per builder)
+max-speed: 100
+max-builders: 4
+max-blocks: 500000
+ignore-air: false         # starting value of the "ignore air" toggle
+
+supply:
+  default: FREE           # FREE, INVENTORY or CHEST
+
+free-in-creative: true    # creative-mode admins never need items when using INVENTORY

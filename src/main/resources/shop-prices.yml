@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------- Shop prices for contract builds
+# Price of ONE block/item when the builders bring the material (supply contract).
+# Materials that are not listed cost default-price. Use exact material names.
+
+default-price: 1.0
+multiplier: 1.0           # multiplies every price below (and the default)
+
+prices:
+  DIRT: 0.1
+  GRASS_BLOCK: 0.2
+  SAND: 0.2
+  GRAVEL: 0.2
+  COBBLESTONE: 0.3
+  STONE: 0.5
+  DEEPSLATE: 0.6
+  STONE_BRICKS: 0.8
+  BRICKS: 1.2
+  SANDSTONE: 0.4
+  OAK_PLANKS: 0.8
+  SPRUCE_PLANKS: 0.8
+  BIRCH_PLANKS: 0.8
+  DARK_OAK_PLANKS: 0.8
+  OAK_LOG: 1.0
+  SPRUCE_LOG: 1.0
+  OAK_STAIRS: 1.2
+  OAK_SLAB: 0.4
+  COBBLESTONE_STAIRS: 0.45
+  STONE_BRICK_STAIRS: 1.2
+  OAK_FENCE: 0.6
+  OAK_DOOR: 2.0
+  GLASS: 0.6
+  GLASS_PANE: 0.2
+  WHITE_WOOL: 0.8
+  WHITE_CONCRETE: 1.0
+  QUARTZ_BLOCK: 3.0
+  TORCH: 0.2
+  LANTERN: 1.5
+  CHEST: 2.0
+  CRAFTING_TABLE: 1.5
+  FURNACE: 1.0
+  BOOKSHELF: 4.0
+  WHITE_BED: 4.0
+  IRON_BLOCK: 20.0
+  GOLD_BLOCK: 40.0
+  DIAMOND_BLOCK: 100.0
